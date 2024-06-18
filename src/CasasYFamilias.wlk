@@ -4,7 +4,3 @@ class Casa {
 	method responsablesDeCasa() = self.habitacionesOcupadas().map({habitacion => habitacion.ocupanteMasViejo()})
 }
 
-class Familia {
-	const property integrantes = #{}
-	method confortPromedio() = 
-}

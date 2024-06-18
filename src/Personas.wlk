@@ -1,3 +1,5 @@
+import Habitaciones.*
+
 class Persona {
 	var property dormitorio
 	var edad
@@ -8,5 +10,10 @@ class Persona {
 		edad += 1
 	}
 	method edad() = edad
-	
+	method estaAGusto(unaHabitacion)
 }
+
+class Obsesivo inherits Persona {
+	override method estaAGusto(unaHabitacion) = unaHabitacion.ocupantes().size() <= 2
+}
+
